@@ -1,3 +1,4 @@
+/* eslint-disable testing-library/prefer-screen-queries */
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
@@ -18,5 +19,10 @@ describe('Gallery', () => {
 	it('matches snapshot DOM node structure', () => {
 		const { asFragment } = render(<Gallery currentCategory={portrait} />);
 		expect(asFragment()).toMatchSnapshot();
+	});
+
+	it('renders h1', () => {
+		const { getByTestId } = render(<Gallery currentCategory={portrait} />);
+		expect(getByTestId('h1tag')).toHaveTextContent('Portraits');
 	});
 });

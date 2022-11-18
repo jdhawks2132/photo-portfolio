@@ -31,8 +31,6 @@ const Navbar = ({ categories = [], setCurrentCategory, currentCategory }) => {
 		setCurrentCategory(categories[categoryIndex]);
 	};
 
-	console.log(currentCategory);
-
 	return (
 		<header data-testid='header' className='flex-row px-1'>
 			<h2>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 // import pages
 import About from './pages/about/About';
 import Gallery from './pages/gallery/Gallery';
+import Contact from './pages/contact/Contact';
 
 // import components
 import Navbar from './components/nav/Navbar';
@@ -33,6 +34,7 @@ function App() {
 			<main>
 				<Gallery currentCategory={currentCategory} />
 				<About />
+				<Contact />
 			</main>
 		</div>
 	);

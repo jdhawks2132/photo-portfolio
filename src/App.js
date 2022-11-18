@@ -1,12 +1,12 @@
-import './App.css';
-
 // import pages
 import About from './pages/about/About';
 
 function App() {
 	return (
 		<div>
-			<About />
+			<main>
+				<About />
+			</main>
 		</div>
 	);
 }
